@@ -3,16 +3,29 @@ A wrapper around the [SMSPortal](https://smsportal.com/) API for sending text me
 
 ## Usage
 
+### Generate and assign a token (you can skip this step if you have already generated a token)
+
 ```
 library(smsportal)
 
-USERNAME = "___"
-TOKEN    = "___"
+CLIENT_ID = "___"
+SECRET_KEY = "___"
 
-smsportal_username(USERNAME)
+smsportal_gentoken(CLIENT_ID, SECRET_KEY)
+```
+
+### Assign a token (skip this step if you generated a token from scratch at the above step)
+
+```
+TOKEN = "___"
+
 smsportal_token(TOKEN)
+```
 
-send_sms("27741398329", "27833823965", paste0("Test message at ", Sys.time(), "."))
+### Send a text message
+
+```
+send_sms(to = "27833823965", message = paste0("Test message at ", Sys.time(), "."))
 ```
 
 ## API token documentation
