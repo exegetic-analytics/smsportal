@@ -11,4 +11,6 @@ Description: A wrapper around the SMSPortal API for sending text messages.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Imports:
+    RCurl, httr, jsonlite
 RoxygenNote: 7.0.2
