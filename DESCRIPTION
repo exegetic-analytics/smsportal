@@ -2,8 +2,11 @@ Package: smsportal
 Type: Package
 Title: Sending Text Messages
 Version: 0.1.0
-Author: Marinus Louw
-Maintainer: Marinus Louw <marinus@exegetic.biz>
+Author: c(
+  person("Marinus", "Louw", email = "marinus@exegetic.biz", role = c("aut", "cre")),
+  person("Megan", "Beckett", email = "megan@exegetic.biz", role = "ctb"),
+  person("Andrew", "Collier", email = "andrew@exegetic.biz", role = "ctb")
+  )
 Description: A wrapper around the SMSPortal API for sending text messages.
 License: GPL-3
 Encoding: UTF-8
